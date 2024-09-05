@@ -1,0 +1,284 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Style */
+
+/*Style Body*/
+body {
+  background-color: rgb(230, 227, 227);
+  background-image: url(img/naruto-pattern.jpg);
+}
+
+/*Style TopBar*/
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 35px;
+  padding-top: 17px;
+  background-color: skyblue;
+  text-align: center;
+
+  border-bottom: 2px solid crimson;
+  z-index: 9999;
+}
+
+/*Style Container*/
+.container {
+  width: 960px;
+  margin: 80px auto;
+  background-color: white;
+  position: relative;
+}
+
+/*Style Link Youtube*/
+.youtube {
+  width: 200px;
+  height: 200px;
+  background-image: url(img/Ribbon_Youtube.png);
+  background-repeat: no-repeat;
+  display: inline-block;
+  text-indent: -9999px;
+  position: absolute;
+  top: 0;
+  right: -28px;
+}
+
+/*Style Header*/
+.header {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+.header .judul {
+  color: orange;
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+.header ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+.header a {
+  text-decoration: none;
+  color: salmon;
+  padding: 5px;
+}
+.header a:hover {
+  color: crimson;
+}
+
+/*Style Gambar Konoha*/
+.hero {
+  height: 300px;
+  background-image: url(img/konoha.jpg);
+  background-size: cover;
+  background-position: 0 -40px;
+  border-top: 5px solid rgb(0, 102, 255);
+  border-bottom: 5px solid rgb(0, 102, 255);
+}
+
+/*Style Content*/
+.main {
+  width: 600px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+.main h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+.main .penulis {
+  font-size: 12px;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.main .penulis a {
+  text-decoration: none;
+}
+.main .penulis a:hover {
+  color: orange;
+}
+.main p {
+  margin-bottom: 20px;
+}
+.main h3 {
+  font-size: 17px;
+  font-weight: bold;
+}
+
+/*Style Sidebar*/
+.sidebar {
+  width: 300px;
+  float: right;
+  padding: 20px;
+}
+.sidebar h4 {
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.sidebar img {
+  width: 60px;
+  height: 80px;
+  float: left;
+  padding-right: 10px;
+}
+.sidebar p {
+  font-size: 12px;
+}
+
+/*Style Footer*/
+.footer {
+  background-color: rgb(70, 70, 70);
+  padding: 7px;
+}
+.footer .copy {
+  text-align: center;
+  color: white;
+  font-size: 10px;
+}
+
+/*clearFix*/
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
